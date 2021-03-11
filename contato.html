@@ -23,22 +23,27 @@
     <div class="container">
         <form>
             <label for="nome">Nome: </label> <br>
-            <input type="text" id="nome">
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id="txtNome"></div>
             <br>
             <br>
             <label for="email">Email:</label> <br>
-            <input type="email" id="email">
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
             <br>
             <br>
             <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
             <br>
             <br>
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
     
         </form>
 
     </div>
-  
+    
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
